@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  web:
+    build: ./coffee-app
+    ports:
+    - "80:80"
+    links:
+    - node
+    volumes:
+    - /home/kg/Code/coffee/coffee-app/dist:/usr/share/nginx/html
+  node:
+    build: ./coffee-node-app
+    ports:
+    - "3000:3000"

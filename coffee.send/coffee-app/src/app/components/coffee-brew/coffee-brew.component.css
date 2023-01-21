@@ -1,0 +1,57 @@
+.brew {
+  text-align: left;
+  max-width: 1350px;
+  margin: auto;
+}
+
+datalist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  width: 500px;
+}
+
+option {
+  padding: 0;
+}
+
+input[type="range"] {
+  width: 500px;
+  margin: 0;
+
+}
+
+/* HIDE RADIO */
+[type=radio] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 5px solid #D2B48C;
+}
+
+.radiopick {
+  justify-content: left;
+  width:250px;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
